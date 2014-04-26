@@ -28,5 +28,12 @@ namespace TestLogin5.Controllers
 
             return View();
         }
+        [Authorize]
+        public ActionResult Cat()
+        {
+            ViewBag.Message = "Just cat.";
+
+            return View();
+        }
     }
 }
